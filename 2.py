@@ -17,7 +17,7 @@ def fib():
     while True:
         yield a
         a, b = b, a + b
-    
+
 def main():
     limit = 4e6
     lower = itertools.takewhile(lambda x: x<limit, fib())
