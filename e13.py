@@ -207,8 +207,7 @@ def main():
 72107838435069186155435662884062257473692284509516
 20849603980134001723930671666823555245252804609722
 53503534226472524250874054075591789781264330331690"""
-    # Only sum the 10+1 higher digits
-    numbers = (int(x[0:11]) for x in numbers_txt.split())
+    numbers = (int(x) for x in numbers_txt.split())
     result = str(sum(numbers))[0:10]
     print('Result: ', result)
 
